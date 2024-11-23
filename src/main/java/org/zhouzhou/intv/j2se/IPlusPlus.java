@@ -1,4 +1,4 @@
-package org.zhouzhou.intv;
+package org.zhouzhou.intv.j2se;
 
 /**
  * ++i 是前置递增，会先递增然后打印出来
