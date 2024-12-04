@@ -6,7 +6,7 @@ import org.springframework.boot.SpringBootVersion;
 import org.springframework.core.SpringVersion;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.zhouzhou.intv.aop.PayService;
+import org.zhouzhou.intv.aoppreview.PayService;
 
 @RestController
 public class PayAopReviewController

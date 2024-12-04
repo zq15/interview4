@@ -1,6 +1,5 @@
-package org.zhouzhou.intv.aop.aspect;
+package org.zhouzhou.intv.aoppreview.aspect;
 
-import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -18,28 +17,28 @@ public class PayAspect
 {
     private static final Logger log = LoggerFactory.getLogger(PayAspect.class);
 
-    @Before("execution(public void org.zhouzhou.intv.aop.PayServiceImpl.pay(..))")
+    @Before("execution(public void org.zhouzhou.intv.aoppreview.PayServiceImpl.pay(..))")
     public void beforeNotify()
     {
         System.out.println("-----@Before前置通知");
     }
-    @After("execution(public void org.zhouzhou.intv.aop.PayServiceImpl.pay(..))")
+    @After("execution(public void org.zhouzhou.intv.aoppreview.PayServiceImpl.pay(..))")
     public void afterNotify()
     {
         System.out.println("-----@After后置通知");
     }
-    @AfterReturning("execution(public void org.zhouzhou.intv.aop.PayServiceImpl.pay(..))")
+    @AfterReturning("execution(public void org.zhouzhou.intv.aoppreview.PayServiceImpl.pay(..))")
     public void afterReturningNotify()
     {
         System.out.println("-----@AfterReturning返回通知");
     }
-    @AfterThrowing("execution(public void org.zhouzhou.intv.aop.PayServiceImpl.pay(..))")
+    @AfterThrowing("execution(public void org.zhouzhou.intv.aoppreview.PayServiceImpl.pay(..))")
     public void afterThrowingNotify()
     {
         System.out.println("-----@AfterThrowing异常通知");
     }
 
-    @Around("execution(public void org.zhouzhou.intv.aop.PayServiceImpl.pay(..))")
+    @Around("execution(public void org.zhouzhou.intv.aoppreview.PayServiceImpl.pay(..))")
     public Object aroundNotify(ProceedingJoinPoint proceedingJoinPoint) throws Throwable
     {
         Object retValue = null;
