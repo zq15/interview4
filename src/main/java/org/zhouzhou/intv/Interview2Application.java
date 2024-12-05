@@ -8,7 +8,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
-@MapperScan("org.zhouzhou.interview2.mapper")
+@MapperScan("org.zhouzhou.intv.mapper")
 public class Interview2Application {
 
     @Resource
